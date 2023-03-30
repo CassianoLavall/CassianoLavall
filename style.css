@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.logo-onebit-png{
+  width: 300px;
+  height: auto;
+}
+.header{
+  background-color:#242424f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+.header-buttons{
+  display: flex;
+  justify-content: end;
+}
+.button{
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0,25s;
+}
+.button:hover{
+  border-bottom: 2px black solid;
+}
+.welcome{
+  text-align: center;
+  padding: 20px;
+}
+.img{
+  width: 250px;
+  height: 50%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.main-content{
+  flex: 1 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(250px, auto);
+  grid-template-areas: 
+  "boxe crossfit nataçao sport-extra"
+  "roupas basquete corrida sport-extra"
+  "surf trilha tenis sport-extra";
+  gap: 10px;
+  padding: 15px 40px;
+}
+
+.sports{ 
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+  height: auto;
+  transition: 0,25s;
+}
+.sports:hover{
+  border: 2px solid #242424f2;
+}
+.sport-boxe{
+  grid-area: boxe;
+}
+.sport-crossfit{
+  grid-area: crossfit;
+}
+.sport-nataçao{
+  grid-area: nataçao;
+}
+.sport-roupas{
+  grid-area: roupas;
+}
+.sport-basquete{
+  grid-area: basquete;
+}
+.sport-corrida{
+  grid-area: corrida;
+}
+.sport-surf{
+  grid-area: surf;
+}
+.sport-trilha{
+  grid-area: trilha;
+}
+.sport-tenis{
+  grid-area: tenis;
+}
+.categoria-extra{
+  grid-area: sport-extra;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sports-extra{
+  transition: 0,25s;
+  border: none;
+  border-radius: 10px;
+}
+.sports-extra:hover{
+  border: 2px solid #242424f2;
+}
+.footer{
+  background-color:#242424f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+/*.voltar-topo-button{
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0,25s;
+}
+.voltar-topo-button:hover{
+  border-bottom: 2px black solid;
+}
